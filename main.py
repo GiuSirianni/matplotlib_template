@@ -31,7 +31,7 @@ plt.plot(x, y5, "--",                   label=r'$\tanh(x)$')
 plt.plot(x, y6, ":",    linewidth=1,    label=r'$\sinh(x)^2$')
 
 # label the axis
-plt.xlabel('x [m]')
+plt.xlabel('x [i]')
 plt.ylabel('y [-]')
 
 # position the legend over the plot
@@ -66,8 +66,8 @@ plt.plot(t, s1, color="c", label="Random white noise 1")
 plt.plot(t, s2, color="m", label="Random white noise 2")
 
 # label the axis
-plt.xlabel('x [m]')
-plt.ylabel('y [-]')
+plt.xlabel('time [s]')
+plt.ylabel('amplitude [-]')
 
 plt.xlim([0, 1.0])
 
@@ -109,7 +109,7 @@ plt.plot(t, s1,         color="red",                    label="Noisy sine signal
 plt.plot(t, s2_c,":",   color="blue",   linewidth=0.5,  label="Clean cosine signal")
 plt.plot(t, s2,         color="blue",                   label="Noisy cosine signal")
 plt.xlabel("time [s]")
-plt.ylabel("signal [-]")
+plt.ylabel("amplitude [-]")
 
 plt.xlim([0, 2.0])
 
