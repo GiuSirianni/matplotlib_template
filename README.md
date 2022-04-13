@@ -1,5 +1,5 @@
 # matplotlib_template
-Templates and examples of a clean matplotlib style
+Template (**`.mplstyle`**) and examples of a clean matplotlib style designed with scientific publications in mind.
 
 ## Examples
 <table>
