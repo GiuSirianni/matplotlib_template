@@ -9,6 +9,7 @@ plt.style.use('clean_gs.mplstyle')
 
 # arrays with sizes of [padding, axis] for all plots 
 # (axis are 3x2) (figure is 4x3) sizes are in inch.
+# must be set depending on how they will be placed in the document to avoid discrepancies
 h = [Size.Fixed(0.7), Size.Fixed(3.0)]
 v = [Size.Fixed(0.5), Size.Fixed(2.0)]
 
@@ -59,7 +60,7 @@ plt.close()
 # Fixing random state for reproducibility
 np.random.seed(19680801)
 
-dt = 0.01
+dt = 0.005
 t = np.arange(0, 1, dt)
 nse1 = np.random.randn(len(t))                 # white noise 1
 nse2 = np.random.randn(len(t))                 # white noise 2
