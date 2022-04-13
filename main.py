@@ -7,8 +7,8 @@ from mpl_toolkits.axes_grid1 import Divider, Size
 # set the style
 plt.style.use('clean_gs.mplstyle')
 
-# arrays with sizes of [padding, axis] for all plots
-# sizes are in inch.
+# arrays with sizes of [padding, axis] for all plots 
+# (axis are 3x2) (figure is 4x3) sizes are in inch.
 h = [Size.Fixed(0.7), Size.Fixed(3.0)]
 v = [Size.Fixed(0.5), Size.Fixed(2.0)]
 
