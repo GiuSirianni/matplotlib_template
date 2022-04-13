@@ -1,10 +1,16 @@
 # imports
 import matplotlib.pyplot as plt
 import numpy as np
+from mpl_toolkits.axes_grid1 import Divider, Size
 
 
 # set the style
 plt.style.use('clean_gs.mplstyle')
+
+# The first items are for padding and the second items are for the axes.
+# sizes are in inch.
+h = [Size.Fixed(0.7), Size.Fixed(3.0)]
+v = [Size.Fixed(0.5), Size.Fixed(2.0)]
 
 
 # 
@@ -22,6 +28,9 @@ y6          = np.sinh(x)
 
 # create figure and plot
 fig1 = plt.figure(1)
+divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
+ax = fig1.add_axes(divider.get_position(),
+axes_locator=divider.new_locator(nx=1, ny=1))
 
 plt.plot(x, y1,                         label=r'$\sin(x)$')
 plt.plot(x, y3,         linewidth=2,    label=r'$\sin(x)^2$')
@@ -39,7 +48,7 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=3, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig1.png', bbox_inches='tight')
+plt.savefig('fig/fig1.png')
 plt.close()
 
 
@@ -61,6 +70,9 @@ s2 = np.sin(2 * np.pi * 10 * t) + nse2
 
 # create figure and plot
 fig1 = plt.figure(2)
+divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
+ax = fig1.add_axes(divider.get_position(),
+axes_locator=divider.new_locator(nx=1, ny=1))
 
 plt.plot(t, s1, color="c", label="Random white noise 1")
 plt.plot(t, s2, color="m", label="Random white noise 2")
@@ -76,7 +88,7 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=2, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig2.png', bbox_inches='tight')
+plt.savefig('fig/fig2.png')
 plt.close()
 
 
@@ -86,6 +98,11 @@ plt.close()
 ### THIRD PLOT (fig3)
 # create figure and plot
 fig1 = plt.figure(3)
+divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
+ax = fig1.add_axes(divider.get_position(),
+axes_locator=divider.new_locator(nx=1, ny=1))
+
+
 np.random.seed(0)
 
 dt = 0.01  # sampling interval
@@ -119,5 +136,5 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=2, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig3.png', bbox_inches='tight')
+plt.savefig('fig/fig3.png')
 plt.close()
