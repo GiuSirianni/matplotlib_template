@@ -26,13 +26,13 @@ v = [Size.Fixed(v_pad), Size.Fixed(v_ax)]
 # 
 ### FIRST PLOT (fig1)
 # data
-x           = np.linspace(-np.pi, np.pi, 1000)
+x           = np.linspace(0, 2 * np.pi, 1000)
 y1          = np.sin(x)
 y2          = np.cos(x)
-y3          = -np.sin(x) * np.sin(x)
-y4          = -np.cos(x) * np.cos(x)
-y5          = np.sin(x) * np.sin(x) * np.sin(x) * np.sin(x)
-y6          = np.cos(x) * np.cos(x) * np.cos(x) * np.cos(x)
+y3          = np.sin(x+np.pi/6)
+y4          = np.cos(x+np.pi/6)
+y5          = np.sin(x+np.pi/3)
+y6          = np.cos(x+np.pi/3)
 
 # create figure and plot
 fig1 = plt.figure(1, figsize=(h_fig, v_fig))
@@ -42,10 +42,10 @@ axes_locator=divider.new_locator(nx=1, ny=1))
 
 plt.plot(x, y1, label=r'$\sin(x)$')
 plt.plot(x, y2, label=r'$\cos(x)$')
-plt.plot(x, y3, label=r'$-\sin(x)^2$')
-plt.plot(x, y4, label=r'$-\cos(x)^2$')
-plt.plot(x, y5, label=r'$\sin(x)^4$')
-plt.plot(x, y6, label=r'$\cos(x)^4$')
+plt.plot(x, y3, label=r'$-\sin(x+\pi/6)$')
+plt.plot(x, y4, label=r'$-\cos(x+\pi/6)$')
+plt.plot(x, y5, label=r'$\sin(x+\pi/3)$')
+plt.plot(x, y6, label=r'$\cos(x+\pi/3)$')
 
 # label the axis
 plt.xlabel('x [-]')
