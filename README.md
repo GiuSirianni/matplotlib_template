@@ -1,5 +1,5 @@
 # matplotlib_template
-Template (**`clean_gs.mplstyle`**) and examples of a clean matplotlib style designed with scientific publications in mind.
+Template (**`clean_gs.mplstyle`**) and examples of a clean matplotlib style designed with scientific publications in mind. The legend is outside of the axis for readability. A simple way to customize axis and figure size independently is added in order to ensure repeatable and predictable figures in a paper.
 
 ## Examples
 <table>
