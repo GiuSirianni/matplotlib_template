@@ -7,11 +7,18 @@ from mpl_toolkits.axes_grid1 import Divider, Size
 # set the style
 plt.style.use('clean_gs.mplstyle')
 
-# arrays with sizes of [padding, axis] for all plots 
+# sizes for padding, axis, figure
 # (axis are 3x2) (figure is 4x3) sizes are in inch.
 # must be set depending on how they will be placed in the document to avoid discrepancies
-h = [Size.Fixed(0.7), Size.Fixed(3.0)]
-v = [Size.Fixed(0.5), Size.Fixed(2.0)]
+h_pad = 0.7
+v_pad = 0.5
+h_ax  = 3.0
+v_ax  = 2.0
+h_fig = 4.0
+v_fig = 3.0
+
+h = [Size.Fixed(h_pad), Size.Fixed(h_ax)]
+v = [Size.Fixed(v_pad), Size.Fixed(v_ax)]
 
 
 # 
@@ -28,7 +35,7 @@ y5          = np.tanh(x)
 y6          = np.sinh(x)
 
 # create figure and plot
-fig1 = plt.figure(1)
+fig1 = plt.figure(1, figsize=(h_fig, v_fig))
 divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
 ax = fig1.add_axes(divider.get_position(),
 axes_locator=divider.new_locator(nx=1, ny=1))
@@ -70,7 +77,7 @@ s1 = np.sin(2 * np.pi * 10 * t) + nse1
 s2 = np.sin(2 * np.pi * 10 * t) + nse2
 
 # create figure and plot
-fig1 = plt.figure(2)
+fig1 = plt.figure(2, figsize=(h_fig, v_fig))
 divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
 ax = fig1.add_axes(divider.get_position(),
 axes_locator=divider.new_locator(nx=1, ny=1))
@@ -98,7 +105,7 @@ plt.close()
 # 
 ### THIRD PLOT (fig3)
 # create figure and plot
-fig1 = plt.figure(3)
+fig1 = plt.figure(3, figsize=(h_fig, v_fig))
 divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
 ax = fig1.add_axes(divider.get_position(),
 axes_locator=divider.new_locator(nx=1, ny=1))
