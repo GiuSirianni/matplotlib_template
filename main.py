@@ -48,7 +48,7 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=3, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig1.png')
+plt.savefig('fig/fig1.png')#, bbox_inches='tight'
 plt.close()
 
 
@@ -88,7 +88,7 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=2, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig2.png')
+plt.savefig('fig/fig2.png')#, bbox_inches='tight'
 plt.close()
 
 
@@ -136,5 +136,5 @@ plt.legend(bbox_to_anchor=(0.5, 1.0), loc="lower center", ncol=2, frameon=False)
 
 # show and save the figure (can be .png, .svg, .pdf, etc)
 plt.show()
-plt.savefig('fig/fig3.png')
+plt.savefig('fig/fig3.png')#, bbox_inches='tight'
 plt.close()
