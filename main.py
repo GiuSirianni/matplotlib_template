@@ -31,7 +31,7 @@ plt.plot(x, y5, "--",                   label=r'$\tanh(x)$')
 plt.plot(x, y6, ":",    linewidth=1,    label=r'$\sinh(x)^2$')
 
 # label the axis
-plt.xlabel('x [i]')
+plt.xlabel('x [-]')
 plt.ylabel('y [-]')
 
 # position the legend over the plot
