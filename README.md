@@ -13,6 +13,6 @@ Template (**`clean_gs.mplstyle`**) and examples of a clean matplotlib style desi
   </tr>
   <tr>
     <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/main92_1.png?raw=true"> </td>
-    <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/flap92_1.png?raw=true"> </td>
+    <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/beta_multibin.png?raw=true"> </td>
   </tr>
 </table>
