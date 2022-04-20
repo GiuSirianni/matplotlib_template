@@ -82,8 +82,8 @@ divider = Divider(fig1, (0, 0, 1, 1), h, v, aspect=False)
 ax = fig1.add_axes(divider.get_position(),
 axes_locator=divider.new_locator(nx=1, ny=1))
 
-plt.plot(t, s1, color="c", label="Random white noise 1")
-plt.plot(t, s2, color="m", label="Random white noise 2")
+plt.plot(t, s1,   label="Random white noise 1")
+plt.plot(t, s2,   label="Random white noise 2")
 
 # label the axis
 plt.xlabel('time [s]')

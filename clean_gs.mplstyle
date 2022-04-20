@@ -299,11 +299,15 @@ axes.formatter.offset_threshold : 4     ## When useoffset is True, the offset
 axes.spines.left   : True   ## display axis spines
 axes.spines.bottom : True
 axes.spines.top    : True
-axes.spines.right  : True
+axes.spines.right  : True  
 axes.unicode_minus  : True    ## use unicode for the minus symbol
                                ## rather than hyphen.  See
                                ## http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-axes.prop_cycle    : cycler('color', ['FF0000', '0000FF', '00FF00', 'FF00FF', 'FFAA00', '009D5C', '606060'])
+axes.prop_cycle    : cycler('color', ['b80058',  '008cf9','006e00','d163e6', 'ebac23', '00bbad',  'b24502','ff9287', '5954d6',  '00c6f8','878500', '00a76c', 'bdbdbd'])
+# axes.prop_cycle    : cycler('color', ['0077bb',  'ee7733','009988', 'cc3311','33bbee', 'ee3377', 'bbbbbb'])
+# axes.prop_cycle    : cycler('color', ['4477aa', '228833',  'ee6677','ccbb44', '66ccee', 'aa3377', 'bbbbbb'])
+# axes.prop_cycle    : cycler('color', ["332288",  "44AA99","117733","88CCEE",  "999933",  "CC6677", "DDCC77","882255", "AA4499"])
+# axes.prop_cycle    : cycler('color', ["55895f","9a4bcb","66b84a","c64176","b89b48","5c4182","d75c3c","6294c3","824837","c888b9"])
                       ## color cycle for plot lines  as list of string
                       ## colorspecs: single letter, long name, or web-style hex
 					  ## Note the use of string escapes here ('1f77b4', instead of 1f77b4)
