@@ -12,7 +12,7 @@ Template (**`clean_gs.mplstyle`**) and examples of a clean matplotlib style desi
     <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/varaksin.png?raw=true"> </td>
   </tr>
   <tr>
-    <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/main92_1.png?raw=true"> </td>
+    <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/vol_frac.png?raw=true"> </td>
     <td> <img src="https://github.com/giusirianni/matplotlib_template/blob/main/fig/beta_multibin.png?raw=true"> </td>
   </tr>
 </table>
